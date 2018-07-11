@@ -1,0 +1,96 @@
+.fp-portfolio {
+  padding: 0 40px 85px;
+
+  .container {
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 26px;
+    line-height: 1;
+    margin-bottom: 50px;
+  }
+
+  &--item {
+    padding: 0 15px;
+
+    img {
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: #878787;
+      font-family: $headersFont;
+    }
+  }
+  .owl-carousel {
+    margin-bottom: 30px;
+  }
+  @include tabletUp {
+    .owl-carousel .owl-nav {
+      padding-top: 15px;
+      button {
+        position: absolute;
+        top: 50%;
+        margin-top: -35px;
+        color: $grey;
+        opacity: 0.3;
+        transition: .15s $standart;
+  
+        &.owl-next {
+          right: -35px;
+        }
+  
+        &.owl-prev {
+          left: -35px;
+        }
+  
+        &:hover {
+          opacity: .5;
+        }
+      }
+  
+      svg {
+        fill: currentColor;
+        display: block;
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+  @include mobile {
+    padding: 0 0 60px;
+    .owl-carousel .owl-nav {
+      text-align: center;
+
+      button {
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        margin: 0 5px;
+        border-radius: 100%;
+        background-color: #eeeeee;
+        color: #bebebe;
+        padding: 0;
+        transition: .15s $standart;
+        box-shadow: 0 0 3px rgba($black, 0);
+
+        &:hover {
+          color: $primary;
+          background-color: $white;
+          box-shadow: 0 0 3px rgba($black, .61);
+        }
+
+        svg {
+          display: block;
+          margin: 0 auto;
+          fill: currentColor;
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+  }
+
+}

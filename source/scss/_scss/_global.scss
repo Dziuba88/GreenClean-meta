@@ -1,0 +1,150 @@
+body {
+  font-family: $baseFont;
+  font-size: $fontSize;
+  line-height: $ratio;
+  padding-top: 60px;
+  overflow-x: hidden;
+
+  @include medium {
+    font-size: 13px;
+  }
+
+  @include tabletDown {padding-top: 0;}
+}
+.noscroll, .noscroll body {
+  @include tabletDown {
+    overflow: hidden !important;
+  }
+}
+* {
+  outline: none;
+}
+
+.show-md-up {
+  display: none;
+
+  @include mediumUp {
+    display: block;
+  }
+}
+
+.hide-md-up {
+  display: block;
+
+  @include mediumUp {
+    display: none;
+  }
+}
+
+.hide-sm-down {
+  display: block;
+  @include mobile {
+    display: none;
+  }
+}
+.hide-md-down {
+  display: block;
+  @include tabletDown {
+    display: none;
+  }
+}
+
+.show-mobile {
+  display: none;
+  @include mobile {display: block;}
+}
+.hide-mobile {
+  @include mobile {display: none;}
+}
+
+p {
+  margin: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headersFont;
+  font-weight: 600;
+  margin: 0;
+}
+
+h2 {
+  font-size: 31px;
+  line-height: 41px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+.text {
+  &--left {
+    text-align: left;
+  }
+  &--right {
+    text-align: right;
+  }
+  &--center {
+    text-align: center;
+  }
+}
+
+.b--inline {
+  display: inline-block;
+}
+
+.btn {
+  display: inline-block;
+  line-height: 25px;
+  vertical-align: middle;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  transition: .15s $standart;
+
+  &.accent {
+    background-color: $accent;
+    color: $black;
+    font-family: $headersFont;
+    font-weight: 400;
+    padding: ($gutter / 2) $gutter;
+    border-radius: 5px;
+    box-shadow: 0 2px 11px rgba($black, .25);
+
+    &:hover {
+      background-color: $accent__light;
+      color: $black;
+      box-shadow: 0 2px 11px rgba($black, 0);
+    }
+  }
+
+  &.grey {
+    background-color: $bright;
+    color: rgba($black, .6);
+    font-family: $headersFont;
+    font-weight: 400;
+    padding: ($gutter / 2) $gutter;
+    border-radius: 5px;
+
+    span, svg {
+      fill: currentColor;
+      color: currentColor;
+      display: inline-block;
+      line-height: 1;
+      vertical-align: middle;
+    }
+
+    svg {
+      width: 9px;
+      height: 9px;
+      margin-left: 5px;
+    }
+
+    &:hover {
+      background-color: $black;
+      color: $white;
+    }
+  }
+}

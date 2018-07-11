@@ -1,0 +1,123 @@
+.form-input {
+  margin-bottom: 25px;
+
+  &.separate {
+    padding-top: 15px;
+  }
+
+  textarea, input {
+    display: block;
+    box-shadow: inset 0.518px 1.932px 4.05px 0.95px rgba(90, 90, 90, 0.2);
+    width: 100%;
+    background-color: $white;
+    border: 1px solid #a5a5a5;
+    border-radius: 5px;
+    margin: 0;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 15px;
+    line-height: 20px;
+    color: #737373;
+  }
+
+  input {
+    height: 53px;
+  }
+  textarea {
+    resize: none;
+    height: 180px;
+  }
+
+  /*the container must be positioned relative:*/
+.selectbox {
+  position: relative;
+
+  select {
+    display: none;
+  }
+  &--selected {
+    display: block;
+    box-shadow: inset 0.518px 1.932px 4.05px 0.95px rgba(90, 90, 90, 0.2);
+    width: 100%;
+    background-color: $white;
+    border: 1px solid #a5a5a5;
+    border-radius: 5px;
+    margin: 0;
+    padding: 15px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    font-size: 15px;
+    line-height: 20px;
+    color: #737373;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    user-select: none;
+    cursor: pointer;
+  }
+  &--items {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: $white;
+    transition: .15s $standart;
+    opacity: 1;
+    transform: scaleY(1);
+    transform-origin: top center;
+    margin: 1px -1px 0;
+    box-shadow: 0 2px 11px rgba($black, .32);
+    border-radius: 0px 0px 5px 5px;
+    overflow: hidden;
+
+    div {
+      cursor: pointer;
+      user-select: none;
+      border-bottom: 1px solid rgba($black, .25);
+      padding: 5px 15px;
+      
+      color: $black;
+
+      &:last-child {border-bottom: none;}
+
+      &:hover {
+        background-color: rgba($black, .1);
+      }
+
+      &.current {
+        background-color: $accent;
+      }
+    }
+  }
+  &--hide {
+    //top: 0;
+    opacity: 0;
+    transform: scaleY(0)
+  }
+  
+  svg {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -4.5px;
+    fill: $primary;
+    width: 9px;
+    height: 9px;
+    transition: .15s $standart;
+  }
+
+  &.active svg {
+    transform: rotate(180deg)
+  }
+
+}
+
+
+
+
+
+
+
+
+}

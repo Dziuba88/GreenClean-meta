@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+block variables
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="initial-scale=1, maximum-scale=1")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title GreenClean - #{page}
+    link(rel="icon", href="images/favicon.png", type="image/png")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,500,700")
+    link(rel="stylesheet", href="css/styles.min.css")
+  body
+    include models/navbar
+    include models/header
+    block content
+    include models/footer
+    // Scripts Declarations 
+    #fb-root
+    script.
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    script.
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    script(src="js/jquery-3.3.1.min.js")
+    script(src="js/main.min.js")
+    script(src="js/app.min.js")

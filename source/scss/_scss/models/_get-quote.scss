@@ -1,0 +1,26 @@
+.get-quote {
+  background: url(../img/get-quote.jpg) no-repeat center center scroll/cover;
+  color: $white;
+
+  &--wraper {
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+
+    h2 {
+      font-size: 21px;
+      line-height: 27px;
+      flex: 1;
+      padding-right: 60px;
+    }
+
+    @include mobile {
+      display: block;
+
+      h2 {
+        padding-right: 0;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

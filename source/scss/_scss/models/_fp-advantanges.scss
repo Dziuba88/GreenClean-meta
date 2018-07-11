@@ -1,0 +1,46 @@
+.fp-advantanges {
+  padding: 115px 0;
+
+  h2 {
+    font-size: 26px;
+    line-height: 1.4;
+    margin-bottom: 50px;
+    @include mobile {padding: 0 15px;}
+  }
+
+  &--wraper {
+    background-color: $white;
+    width: 1335px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 85px 0 35px;
+    box-shadow: 0 0 15px rgba($black, .29);
+
+    @include mediumDown {
+      box-shadow: none;
+      padding: 0;
+    }
+  }
+
+
+  &--item {
+    margin-bottom: 50px;
+    width: 300px;
+    max-width: 100%;
+
+    h3 {
+      text-transform: uppercase;
+      font-size: 19px;
+      padding-top: 15px;
+      margin-bottom: 15px;
+    }
+  }
+
+  @include mobile {
+    padding: 60px 0 15px;
+
+    &--item {
+      img {width: 55px;}
+    }
+  }
+}

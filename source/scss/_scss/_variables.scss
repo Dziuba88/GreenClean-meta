@@ -1,0 +1,34 @@
+// Media Query Ranges //
+  $xs-screen: 480px !default;  //Small Screen:		481x768;
+  $sm-screen: 768px !default;  //Tablet Screen:		769x960;
+  $md-screen: 960px !default;  //Medium Screen:		961x1240;
+  $lg-screen: 1240px !default;  //Large Screen:		1241x ~ ;
+
+// Grid //
+  $num-cols: 12 !default;
+  $gutter: 30px !default;
+
+// Typography // 1.067 // 1.125 // 1.200 // 1.25 // 1.333 // 1.414 // 1.618 — Golden Ratio
+$baseFont: 'Roboto', sans-serif !default;
+$headersFont: 'Open Sans', sans-serif !default;
+$fontSize: 15px !default;
+$ratio: 1.7 !default;
+// Color Theme //
+$black: #000000 !default;
+$white: #ffffff !default;
+$grey: #6c6c6c !default;
+$bright: #e2e2e2 !default;
+$light: #f5f5f5 !default;
+$primary: #007b3b !default;
+$primary__dark: #006731 !default;
+$secondary: #0076ad !default;
+$accent: #ffd800 !default;
+$accent__light: #ffe557 !default;
+
+
+
+// Timing Animations
+$deceleration: cubic-bezier(0, 0, .2, 1) !default;
+$standart: cubic-bezier(.4, 0, .2, 1) !default;
+$acceleration: cubic-bezier(.4, 0, 1, 1) !default;
+$sharp: cubic-bezier(.4, 0, .6, 1) !default;

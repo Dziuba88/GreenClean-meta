@@ -1,0 +1,144 @@
+.header {
+  background-color: $white;
+  padding-top: 45px;
+  padding-bottom: 90px;
+  text-align: right;
+
+  .row {
+    align-items: center;
+  }
+
+  &--logo {
+    text-align: left;
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+  }
+
+  &--slogan {
+    span {
+      color: $grey;
+      line-height: 22px;
+      display: inline-block;
+      text-align: left;
+    }
+  }
+
+  &--social {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-image: none;
+    font-size: 0;
+
+    li {
+      display: inline-block;
+      padding: 0 7.5px;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 45px;
+        height: 45px;
+        border-radius: 100%;
+        box-shadow: 0 0 3px rgba($black, .45);
+        color: $grey;
+        background-color: $white;
+        transition: .15s $standart;
+
+        &:hover {
+          color: $black;
+          background-color: $accent;
+        }
+
+        svg {
+          display: block;
+          width: 24px;
+          height: 24px;
+          fill: currentColor;
+        }
+      }
+    }
+  }
+
+  &--phone {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1;
+
+    @include medium {
+      font-size: 19px;
+    }
+
+    a {
+      text-decoration: none;
+      color: $black;
+
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+
+  &--mail {
+
+    a {
+      text-decoration: none;
+      color: $secondary;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &--adress {
+    span {
+      display: inline-block;
+      text-align: left;
+      color: $grey;
+      line-height: 22px;
+    }
+  }
+
+  @include mediumDown {
+    padding-bottom: 45px;
+  }
+
+  @include tabletDown {
+    &--slogan {
+      text-align: left;
+      padding-top: 30px;
+    }
+
+    &--links {
+      padding-bottom: 76px;
+    }
+  }
+
+  @include mobile {
+    padding: 30px 0;
+    &--phone, &--mail {
+      text-align: left;
+    }
+
+    &--social {
+      li {
+        padding: 0;
+
+        &:first-child {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    &--links {
+      padding-bottom: 0;
+      padding-top: 15px;
+    }
+  }
+
+}

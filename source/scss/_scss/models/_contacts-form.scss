@@ -1,0 +1,10 @@
+.contacts-form {
+  padding: 85px 0;
+
+  h2 {
+    font-size: 26px;
+    line-height: 1;
+    margin-bottom: 50px;
+  }
+  @include mobile {padding: 60px 0;}
+}

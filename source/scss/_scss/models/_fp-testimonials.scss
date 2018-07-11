@@ -1,0 +1,138 @@
+.fp-testimonials {
+  padding: 100px 40px;
+  background-color: $bright;
+
+  .container {
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 26px;
+    line-height: 1;
+    margin-bottom: 50px;
+  }
+
+  .owl-carousel .owl-nav {
+    @include mobile {display: none;}
+    button {
+      position: absolute;
+      top: 50%;
+      margin-top: -70px;
+      color: $grey;
+      opacity: 0.3;
+      transition: .15s $standart;
+
+      &.owl-next {
+        right: -35px;
+        @include tablet {right: -60px;}
+      }
+
+      &.owl-prev {
+        left: -35px;
+        @include tablet {left: -95px;}
+      }
+
+      &:hover {
+        opacity: .5;
+      }
+    }
+
+    svg {
+      fill: currentColor;
+      display: block;
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  &--item {
+    padding: 0 15px;
+
+    &__body {
+      background-color: $white;
+      padding: 50px;
+      position: relative;
+      box-shadow: 0 2px 11px rgba($black, .32);
+      margin-bottom: 45px;
+
+      &:after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 20px 20px 0 0;
+        border-color: #ffffff transparent transparent transparent;
+        position: absolute;
+        top: 100%;
+        left: 40px;
+      }
+    }
+
+    &__rating {
+      color: $primary;
+      background: url(../img/testimonial.png) no-repeat center right;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+
+      svg {
+        display: block;
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+        margin-right: 5px;
+      }
+    }
+
+    &__footer {
+      display: flex;
+      align-items: center;
+
+      img {
+        display: block !important;
+        width: 64px !important;
+        height: 64px !important;
+        border-radius: 100%;
+        margin-right: 15px;
+      }
+
+      span, strong {
+        display: block;
+      }
+
+      strong {
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      span {
+        font-size: 15px;
+        color: $grey;
+      }
+    }
+  }
+
+  &--wraper {
+    padding: 0;
+    @include tablet {
+      padding: 0 95px;
+    }
+  }
+
+  @include mobile {
+    padding: 60px 0;
+
+    &--item {
+      &__body {
+        padding: 30px;
+      }
+
+      &__rating {
+        background: transparent;
+      }
+    }
+  }
+
+}

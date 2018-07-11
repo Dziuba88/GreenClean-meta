@@ -1,0 +1,25 @@
+@import '_scss/variables';
+
+@import '_scss/normalize';
+@import '_scss/grid';
+@import '_scss/global';
+@import '_scss/forms';
+
+// Plugins 
+@import '_plugins/owl.carousel/owl.carousel';
+
+// Components 
+@import '_scss/models/navbar';
+@import '_scss/models/header';
+@import '_scss/models/footer';
+
+
+@import '_scss/models/fp-slider';
+@import '_scss/models/fp-services';
+@import '_scss/models/fp-products';
+@import '_scss/models/fp-advantanges';
+@import '_scss/models/fp-portfolio';
+@import '_scss/models/get-quote';
+@import '_scss/models/fp-testimonials';
+@import '_scss/models/contacts-form';
+
