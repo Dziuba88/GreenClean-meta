@@ -75,7 +75,6 @@ $( document ).ready(function() {
     var wrapper = $this.closest('.video');
 
     $('.video').removeClass('active');
-    $('.video').find('.video--iframe').hide;
     $('.video').find('.video--iframe').removeAttr('src');
     videoPlay(wrapper);
   });
@@ -83,7 +82,6 @@ $( document ).ready(function() {
     var iframe = wrapper.find('.video--iframe');
     var src = iframe.data('src');
     wrapper.addClass('active');
-    iframe.show();
     iframe.attr('src',src);
   };
 
