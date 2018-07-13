@@ -1,0 +1,29 @@
+section.contacts-form
+  .container
+    .text--center: h2 Get your free quote!
+    .row
+      .col.md-8
+        .row
+          .col.sm-6
+            .form-input
+              input(type="text" placeholder=" Your name ")
+          .col.sm-6
+            .form-input
+              input(type="email" placeholder=" E-mail address ")
+          .col.sm-6
+            .form-input
+              input(type="text" placeholder=" Your phone number ")
+          .col.sm-6
+            .form-input
+              .selectbox
+                svg.selectbox--arrow(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 6"): path(d="M0 .8a.8.8 0 0 0 .2.6L4.5 6l4.3-4.6a.9.9 0 0 0 0-1.1.7.7 0 0 0-1.1 0L4.5 3.6 1.3.2a.7.7 0 0 0-1 0 .8.8 0 0 0-.3.6z")
+                select
+                  option Select Service
+                  option One-off deep cleaning
+                  option One-off deep cleaning 2
+                  option One-off deep cleaning 3
+          .col.sm-12
+            .form-input.separate
+              textarea(placeholder=" Message ")
+          .col.sm-12: button.btn.accent Send message 
+      .col.md-4.show-md-up.text--right: img(src="img/contact-form.png", alt="")

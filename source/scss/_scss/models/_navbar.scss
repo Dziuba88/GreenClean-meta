@@ -36,6 +36,7 @@
         padding: 20px 30px;
         text-decoration: none;
         color: currentColor;
+        user-select: none;
 
         svg {
           display: none;
@@ -302,7 +303,7 @@
             width: 100%;
             overflow: hidden;
             height: 0;
-  
+
             &::before {display: none;}
 
             ul li a {

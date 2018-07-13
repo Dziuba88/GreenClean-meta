@@ -1,0 +1,129 @@
+.testimonials {
+  padding: 40px 0;
+
+  h1 {
+    line-height: 1;
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+
+  &--item {
+    margin-bottom: 80px;
+
+    &__header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+
+      img {
+        display: block !important;
+        width: 64px !important;
+        height: 64px !important;
+        border-radius: 100%;
+        margin-right: 15px;
+      }
+
+      span, strong {
+        display: block;
+      }
+
+      strong {
+        font-size: 16px;
+        font-weight: 600;
+        color: $secondary;
+      }
+
+      span {
+        font-size: 15px;
+        color: $grey;
+      }
+
+    }
+
+    &__body {
+      background-color: $white;
+      padding: 50px;
+      position: relative;
+      box-shadow: 0 2px 11px rgba($black, .32);
+
+      &:after {
+        content: '';
+        display: block;
+        background: url(../img/testimonials__arrow.png) no-repeat center bottom;
+        width: 42px;
+        height: 30px;
+        position: absolute;
+        top: 100%;
+        left: 15px;
+      }
+    }
+
+    &__rating {
+      color: #cacaca;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+
+      svg {
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        fill: currentColor;
+      }
+
+      &.rate5 {
+        color: $primary;
+      }
+
+      &.rate4 {
+        svg:nth-child(1), svg:nth-child(2), svg:nth-child(3), svg:nth-child(4) {
+          fill: $primary;
+        }
+      }
+
+      &.rate3 {
+        svg:nth-child(1), svg:nth-child(2), svg:nth-child(3) {
+          fill: $primary;
+        }
+      }
+
+      &.rate2 {
+        svg:nth-child(1), svg:nth-child(2) {
+          fill: $primary;
+        }
+      }
+
+      &.rate1 {
+        svg:nth-child(1) {
+          fill: $primary;
+        }
+      }
+
+      &.rate0 {
+        svg {
+          fill: currentColor;
+        }
+      }
+    }
+
+    @include tabletDown {
+      margin-bottom: 60px;
+    }
+
+    @include mobile {
+      margin: 0 -15px 70px;
+
+      &__body {
+        padding: 30px 15px;
+      }
+    }
+  }
+
+
+
+
+
+
+}

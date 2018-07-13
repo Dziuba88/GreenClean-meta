@@ -7,11 +7,14 @@
 
 // Plugins 
 @import '_plugins/owl.carousel/owl.carousel';
+@import '_plugins/magnific-popup/magnific-popup';
 
 // Components 
 @import '_scss/models/navbar';
 @import '_scss/models/header';
 @import '_scss/models/footer';
+@import '_scss/models/breadcrumb';
+@import '_scss/models/pagination';
 
 
 @import '_scss/models/fp-slider';
@@ -22,4 +25,10 @@
 @import '_scss/models/get-quote';
 @import '_scss/models/fp-testimonials';
 @import '_scss/models/contacts-form';
+@import '_scss/models/about';
+@import '_scss/models/testimonials';
+@import '_scss/models/specials';
+@import '_scss/models/services';
+@import '_scss/models/portfolio';
+@import '_scss/models/contacts';
 

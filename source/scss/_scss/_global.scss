@@ -4,6 +4,7 @@ body {
   line-height: $ratio;
   padding-top: 60px;
   overflow-x: hidden;
+  min-width: 320px;
 
   @include medium {
     font-size: 13px;
@@ -49,12 +50,25 @@ body {
   }
 }
 
+.show-tablet {
+  display: none;
+  @include tablet {display: block;}
+}
 .show-mobile {
   display: none;
   @include mobile {display: block;}
 }
 .hide-mobile {
   @include mobile {display: none;}
+}
+
+a {
+  text-decoration: none;
+  color: $secondary;
+
+  &:hover {
+    color: $primary;
+  }
 }
 
 p {
@@ -93,6 +107,11 @@ h3 {
   display: inline-block;
 }
 
+.flex--center {
+  display: flex;
+  align-items: center;
+}
+
 .btn {
   display: inline-block;
   line-height: 25px;
@@ -103,6 +122,22 @@ h3 {
   text-align: center;
   white-space: nowrap;
   transition: .15s $standart;
+
+  &.primary {
+    background-color: $primary;
+    color: $white;
+    font-family: $headersFont;
+    font-weight: 400;
+    padding: ($gutter / 2) $gutter;
+    border-radius: 5px;
+    box-shadow: 0 2px 11px rgba($black, .25);
+
+    &:hover {
+      background-color: $primary__dark;
+      color: $white;
+      box-shadow: 0 2px 11px rgba($black, 0);
+    }
+  }
 
   &.accent {
     background-color: $accent;

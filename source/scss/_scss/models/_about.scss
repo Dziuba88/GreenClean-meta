@@ -1,0 +1,26 @@
+.about-us {
+  padding: 40px 0 80px;
+
+  h1 {
+    line-height: 1;
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+
+  p {
+    margin: 0 0 26px;
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  .align-right {
+    float: right;
+    width: 180px;
+    margin: 0 0 0 40px;
+
+    @include mobile {
+      float: none;
+      margin: 26px 0;
+    }
+  }
+}

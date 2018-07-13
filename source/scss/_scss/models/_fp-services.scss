@@ -20,7 +20,9 @@
   }
 
   &--item {
+    display: block;
     padding: 0 15px 50px;
+    color: $black;
     @include mediumDown {
       padding: 0 0 30px;
     }

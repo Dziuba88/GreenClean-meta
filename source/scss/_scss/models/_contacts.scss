@@ -1,0 +1,92 @@
+
+.contacts {
+  padding: 40px 0 0;
+  h1 {
+    line-height: 1;
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+
+  .map-container {position: relative;overflow: hidden;}
+  .map-container:before, .map-container:after, .map:before, .map:after {content: '';position: absolute;box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);z-index: 1;}
+  .map-container:before { top: -5px; left: 0; right: 0; height: 5px; }
+  .map-container:after { right: -5px; top: 0; bottom: 0; width: 5px; }
+  .map:before { bottom: -5px; left: 0; right: 0; height: 5px; }
+  .map:after { left: -5px; top: 0; bottom: 0; width: 5px; }
+  #g-map {
+    width: 100%;height: 640px;
+    @include mobile {
+      height: 460px;
+    }
+  }
+
+  &--list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    font-family: $headersFont;
+
+    &__separator {
+      flex: none;
+      width: 150px;
+      height: 95px;
+      fill: #787878;
+    }
+
+    &__label {
+      display: block;
+      margin-bottom: 15px;
+      font-size: 15px;
+      line-height: 26px;
+      color: #787878;
+    }
+
+    &__text {
+      font-size: 15px;
+      line-height: 26px;
+    }
+
+    &__areas {
+      max-width: 340px;
+    }
+
+    &__mail a {
+      color: $secondary;
+
+      &:hover {
+        color: $accent;
+      }
+    }
+
+    &__phone a {
+      color: $black;
+      font-size: 21px;
+      font-weight: 600;
+
+      &:hover {
+        color: $secondary;
+      }
+    }
+
+    @include tabletDown {
+      &__phone {
+        padding-top: 40px;
+      }
+    }
+
+    @include mobile {
+      display: block;
+      margin-bottom: 30px;
+
+      &__label {
+        margin-bottom: 10px;
+      }
+      &__phone {
+        padding-top: 30px;
+      }
+      &__mail, &__separator {display: none;}
+    }
+  }
+}
+

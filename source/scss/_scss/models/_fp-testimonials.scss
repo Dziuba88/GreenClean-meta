@@ -58,19 +58,17 @@
       &:after {
         content: '';
         display: block;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 20px 20px 0 0;
-        border-color: #ffffff transparent transparent transparent;
+        background: url(../img/testimonials__arrow.png) no-repeat center bottom;
+        width: 42px;
+        height: 30px;
         position: absolute;
         top: 100%;
-        left: 40px;
+        left: 15px;
       }
     }
 
     &__rating {
-      color: $primary;
+      color: #cacaca;
       background: url(../img/testimonial.png) no-repeat center right;
       height: 30px;
       display: flex;
@@ -81,8 +79,42 @@
         display: block;
         width: 20px;
         height: 20px;
-        fill: currentColor;
         margin-right: 5px;
+        fill: currentColor;
+      }
+
+      &.rate5 {
+        color: $primary;
+      }
+
+      &.rate4 {
+        svg:nth-child(1), svg:nth-child(2), svg:nth-child(3), svg:nth-child(4) {
+          fill: $primary;
+        }
+      }
+
+      &.rate3 {
+        svg:nth-child(1), svg:nth-child(2), svg:nth-child(3) {
+          fill: $primary;
+        }
+      }
+
+      &.rate2 {
+        svg:nth-child(1), svg:nth-child(2) {
+          fill: $primary;
+        }
+      }
+
+      &.rate1 {
+        svg:nth-child(1) {
+          fill: $primary;
+        }
+      }
+
+      &.rate0 {
+        svg {
+          fill: currentColor;
+        }
       }
     }
 

@@ -1,7 +1,7 @@
 .header {
   background-color: $white;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 45px;
+  padding-bottom: 45px;
   text-align: right;
 
   .row {
@@ -102,10 +102,6 @@
       color: $grey;
       line-height: 22px;
     }
-  }
-
-  @include mediumDown {
-    padding-bottom: 45px;
   }
 
   @include tabletDown {

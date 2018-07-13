@@ -1,0 +1,56 @@
+extends layout
+block variables
+  - page = 'About Us'
+block content
+  .breadcrumb
+    .container
+      ul
+        li: a(href="./") GreenClean
+        li: span About Us
+  section.about-us
+    .container
+      h1 About Us
+      .row
+        .col.md-8
+          img(src="img/aboutus.png", alt="").align-right.show-tablet
+          p Professional Carpet Cleaning is a Carpet Cleaning Dublin based company, providing carpet and upholstery cleaning. We cover Dublin and surrounding areas. Our carpet cleaners are professionally trained for carpet, upholstery, leather cleaning and floor cleaning.
+          img(src="img/aboutus.png", alt="").align-right.show-mobile
+          p We offer our cleaning services to all domestic or commercial customers, working with landlords, homeowners, tenants, estate agents etc Whether you need carpet cleaning services in Dublin or other procedures such as rug cleaning, upholstery cleaning, mattress cleaning, stain removal and leather care, we can provide the best results by using our expertise in the industry.
+          p The experienced carpet cleaners at Happy Clean are able to offer both the wet and dry methods for cleaning carpets, rugs or upholstery. 
+        .col.md-4.text--center.show-md-up: img(src="img/aboutus.png", alt="")
+      a.btn.primary Get a free quote!
+  section.about-advantanges
+    .container
+      .text--center: h2 Why Choose Green-Clean Services?
+      .row
+        .col.md-4.sm-6
+          .about-advantanges--item
+            img(src="img/advantange-1.png", alt="")
+            h3 DISCOUNT AND BONUSES 
+            p At Cleanscape, newly hired staff will have to go through an immense. All our cleaning staff are BICSc certified and undergo full training
+        .col.md-4.sm-6
+          .about-advantanges--item
+            img(src="img/advantange-2.png", alt="")
+            h3 FULLY INSURED 
+            p Happy Clean is a young company created with the aim of offering quality cleaning services at the highest standards
+        .col.md-4.sm-6
+          .about-advantanges--item
+            img(src="img/advantange-3.png", alt="")
+            h3 FREE QUOTATIONS
+            p We also give you the possibility of creating your own personalized cleaning service according to your needs
+        .col.md-4.sm-6.hide-sm-down
+          .about-advantanges--item
+            img(src="img/advantange-4.png", alt="")
+            h3 BETTER SUPERVISION
+            p We also give you the possibility of creating your own personalized cleaning service according to your needs
+        .col.md-4.sm-6.hide-sm-down
+          .about-advantanges--item
+            img(src="img/advantange-5.png", alt="")
+            h3 ADVANCED MACHINERY
+            p Standing apart from other Dublin cleaning companies, Cleanscape equips an advanced yet easy to use and never failing using the latest technology
+        .col.md-4.sm-6.hide-sm-down
+          .about-advantanges--item
+            img(src="img/advantange-6.png", alt="")
+            h3 FLEXIBLE HOURS
+            p At Cleanscape, newly hired staff will have to go through an immense. All our cleaning staff are BICSc certified and undergo full training
+  include models/contacts-form

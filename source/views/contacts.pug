@@ -1,0 +1,26 @@
+extends layout
+block variables
+  - page = 'Contacts'
+block content
+  .breadcrumb
+    .container
+      ul
+        li: a(href="./") GreenClean
+        li: span Contacts
+  section.contacts
+    .container
+      h1 Contacts
+      .contacts--list
+        .contacts--list__areas
+          .contacts--list__label Areas We Cover
+          .contacts--list__text We cover all County Dublin, Kildare and Wicklow and also surrounding areas.
+        svg.contacts--list__separator(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53 94"): path(d="M1.8 94L0 93 51.2 0 53 1z")
+        .contacts--list__mail
+          .contacts--list__label Our E-mail
+          .contacts--list__text: a(href="mailto:info@happyclean.ie") info@happyclean.ie
+        svg.contacts--list__separator.show-md-up(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53 94"): path(d="M1.8 94L0 93 51.2 0 53 1z")
+        .contacts--list__phone
+          .contacts--list__label Phone
+          .contacts--list__text: a(href="tel:0891302040") 089 130 2040
+      .map-container: .map#g-map
+  include models/contacts-form

@@ -1,0 +1,52 @@
+extends layout
+block variables
+  - page = 'Specials'
+block content
+  .breadcrumb
+    .container
+      ul
+        li: a(href="./") GreenClean
+        li: span Specials
+  section.specials
+    .container
+      h1 Specials
+      .specials--item
+        .specials--item__header
+          h3 Special Offers
+        .specials--item__body
+          ul
+            li Paving cleaning &nbsp;&nbsp;–&nbsp;&nbsp; Bedroom Specials!! One Room (up to 12′ x 12′) from only €55.. Two Bedrooms from €69… Three Bedrooms from €85… Call Today!!
+            li Upholstery Cleaning &nbsp;&nbsp;–&nbsp;&nbsp; Specials!! 2+1+1 for €99 or a 3+1+1 for €109
+            li Three Bedrooms &nbsp;&nbsp;–&nbsp;&nbsp; Combination Offer!! 3 Bedrooms + Stairs & Landing for only €109!!
+            li House Keeping &nbsp;&nbsp;–&nbsp;&nbsp; Collect, Clean and Return Offers!!  Less than 5′ for €50. More than 6′ for €55.  More than 7′ for €60.  More than 8′ for €65. Larger again?  Price on request!!
+      .specials--item
+        .specials--item__header.bright
+          h3 Book more than one service
+        .specials--item__body
+          .flex--center
+            .specials--item__body--left
+              span 10%
+              small OFF
+            svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53 94"): path(d="M1.8 94L0 93 51.2 0 53 1z")
+            .specials--item__body--right These discounts are based on multiple jobs being carried out on the same day at the same locations
+      .specials--item
+        .specials--item__header
+          h3 Book more than one service
+        .specials--item__body
+          .flex--center
+            .specials--item__body--left
+              span 15%
+              small OFF
+            svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53 94"): path(d="M1.8 94L0 93 51.2 0 53 1z")
+            .specials--item__body--right These discounts are based on multiple jobs being carried out on the same day at the same locations
+      .specials--item
+        .specials--item__header.dark
+          h3 Book more than one service
+        .specials--item__body
+          .flex--center
+            .specials--item__body--left
+              span 20%
+              small OFF
+            svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53 94"): path(d="M1.8 94L0 93 51.2 0 53 1z")
+            .specials--item__body--right These discounts are based on multiple jobs being carried out on the same day at the same locations
+  include models/contacts-form
