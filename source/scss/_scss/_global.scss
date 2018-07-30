@@ -117,6 +117,7 @@ h3 {
   line-height: 25px;
   vertical-align: middle;
   cursor: pointer;
+  user-select: none;
   border: none;
   text-decoration: none;
   text-align: center;
@@ -160,7 +161,7 @@ h3 {
     color: rgba($black, .6);
     font-family: $headersFont;
     font-weight: 400;
-    padding: ($gutter / 2) $gutter;
+    padding: ($gutter / 2) ($gutter * 1.5);
     border-radius: 5px;
 
     span, svg {
@@ -172,14 +173,43 @@ h3 {
     }
 
     svg {
-      width: 9px;
-      height: 9px;
-      margin-left: 5px;
+      width: 8px;
+      height: 8px;
+      margin-left: 8px;
+      opacity: 0.75;
     }
 
     &:hover {
       background-color: $black;
       color: $white;
+    }
+  }
+
+  &.grey2 {
+    background-color: $bright;
+    color: rgba($black, .6);
+    font-family: $headersFont;
+    font-weight: 400;
+    padding: ($gutter / 2) ($gutter * 1.5);
+    border-radius: 5px;
+
+    span, svg {
+      fill: currentColor;
+      color: currentColor;
+      display: inline-block;
+      line-height: 1;
+      vertical-align: middle;
+    }
+
+    svg {
+      width: 8px;
+      height: 8px;
+      margin-left: 8px;
+      opacity: 0.75;
+    }
+
+    &:hover {
+      background-color: rgba($black, .25);
     }
   }
 }

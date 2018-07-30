@@ -74,30 +74,30 @@
       }
 
       &.rate5 {
-        color: $primary;
+        color: #01ae52;
       }
 
       &.rate4 {
         svg:nth-child(1), svg:nth-child(2), svg:nth-child(3), svg:nth-child(4) {
-          fill: $primary;
+          fill: #01ae52;
         }
       }
 
       &.rate3 {
         svg:nth-child(1), svg:nth-child(2), svg:nth-child(3) {
-          fill: $primary;
+          fill: #01ae52;
         }
       }
 
       &.rate2 {
         svg:nth-child(1), svg:nth-child(2) {
-          fill: $primary;
+          fill: #01ae52;
         }
       }
 
       &.rate1 {
         svg:nth-child(1) {
-          fill: $primary;
+          fill: #01ae52;
         }
       }
 

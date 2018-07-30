@@ -21,9 +21,61 @@
     display: block;
     flex: 1;
     text-align: center;
+    transition: .15s $standart;
 
     img {
       max-width: 100%;
+      opacity: 0;
+    }
+
+    &:nth-child(1) {
+      background: url(../img/product-1.png) no-repeat center center;
+      background-size: contain;
+    }
+
+    &:nth-child(1):hover {
+      background: url(../img/product-1_1.png) no-repeat center center;
+      background-size: contain;
+    }
+
+    &:nth-child(2) {
+      background: url(../img/product-2.png) no-repeat center center;
+      background-size: contain;
+    }
+
+    &:nth-child(2):hover {
+      background: url(../img/product-2_1.png) no-repeat center center;
+      background-size: contain;
+    }
+
+    &:nth-child(3) {
+      background: url(../img/product-3.png) no-repeat center center;
+      background-size: contain;
+    }
+
+    &:nth-child(3):hover {
+      background: url(../img/product-3_1.png) no-repeat center center;
+      background-size: contain;
+    }
+
+    &:nth-child(4) {
+      background: url(../img/product-4.png) no-repeat center center;
+      background-size: contain;
+    }
+
+    &:nth-child(4):hover {
+      background: url(../img/product-4_1.png) no-repeat center center;
+      background-size: contain;
+    }
+
+    &:nth-child(5) {
+      background: url(../img/product-5.png) no-repeat center center;
+      background-size: contain;
+    }
+
+    &:nth-child(5):hover {
+      background: url(../img/product-5_1.png) no-repeat center center;
+      background-size: contain;
     }
 
     @include tabletDown {

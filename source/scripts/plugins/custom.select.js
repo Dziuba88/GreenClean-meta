@@ -43,10 +43,14 @@ for (i = 0; i < x.length; i++) {
       /*when the select box is clicked, close any other select boxes,
       and open/close the current select box:*/
       e.stopPropagation();
-      closeAllSelect(this);
-      this.nextSibling.classList.toggle("selectbox--hide");
-      //this.classList.toggle("active");
-      this.parentNode.classList.toggle("active");
+      if ( this.parentNode.classList.contains("active") ) {
+        closeAllSelect(this);
+      } else {
+        closeAllSelect(this);
+        this.nextSibling.classList.toggle("selectbox--hide");
+        //this.classList.toggle("active");
+        this.parentNode.classList.toggle("active");
+      }
   });
 }
 function closeAllSelect(elmnt) {

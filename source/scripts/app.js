@@ -112,6 +112,22 @@ $( document ).ready(function() {
       }
     }
   });
+
+
+  $('.fp-services .btn.grey').click(function () {
+    $(this).slideUp(500);
+    $('#more_services').slideDown(500);
+  });
+  
+  $('[data-scroll]').on('click', function(event) {
+    var target = $(this.getAttribute('data-scroll'));
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+});
 });
 
   // google map //
@@ -210,5 +226,5 @@ $( document ).ready(function() {
                 infowindow.open(map, marker);
             }
         })(marker, i));
-    }
+    };
   }

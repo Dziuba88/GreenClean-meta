@@ -42,6 +42,14 @@
         }
       }
 
+      &:first-child, &:last-child {
+        a:hover {
+          background-color: rgba($black, .25);
+          color: rgba($black, .6);
+          border: 1px solid rgba($black, 0);
+        }
+      }
+
       &.current span, a:hover {
         background-color: $primary;
         border-color: $primary;

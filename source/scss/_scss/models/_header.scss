@@ -15,6 +15,10 @@
       display: block;
       max-width: 100%;
     }
+
+    &:hover {
+      opacity: 0.75;
+    }
   }
 
   &--slogan {
@@ -50,8 +54,8 @@
         transition: .15s $standart;
 
         &:hover {
-          color: $black;
-          background-color: $accent;
+          color: $primary;
+          //background-color: $accent;
         }
 
         svg {

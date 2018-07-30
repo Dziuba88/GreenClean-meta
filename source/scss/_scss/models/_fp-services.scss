@@ -42,4 +42,8 @@
     }
   }
   @include mobile {padding: 60px 0;}
+
+  #more_services {
+    display: none;
+  }
 }

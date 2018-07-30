@@ -31,7 +31,7 @@
       flex: none;
       width: 150px;
       height: 95px;
-      fill: #787878;
+      fill: #aaaaaa;
     }
 
     &__label {
@@ -45,6 +45,8 @@
     &__text {
       font-size: 15px;
       line-height: 26px;
+      color: #000;
+      font-weight: 600;
     }
 
     &__areas {
