@@ -15,6 +15,11 @@
       align-items: center;
       margin-bottom: 20px;
 
+      .author {
+        padding-right: 30px;
+        flex: 1;
+      }
+
       img {
         display: block !important;
         width: 64px !important;
@@ -36,6 +41,31 @@
       span {
         font-size: 15px;
         color: $grey;
+      }
+
+      a.facebook {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        box-shadow: 0 0 3px rgba($black, .45);
+        color: $grey;
+        background-color: $white;
+        transition: .15s $standart;
+
+        &:hover {
+          color: $primary;
+          //background-color: $accent;
+        }
+
+        svg {
+          display: block;
+          width: 16px;
+          height: 16px;
+          fill: currentColor;
+        }
       }
 
     }

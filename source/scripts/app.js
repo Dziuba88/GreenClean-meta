@@ -113,12 +113,6 @@ $( document ).ready(function() {
     }
   });
 
-
-  $('.fp-services .btn.grey').click(function () {
-    $(this).slideUp(500);
-    $('#more_services').slideDown(500);
-  });
-  
   $('[data-scroll]').on('click', function(event) {
     var target = $(this.getAttribute('data-scroll'));
     if( target.length ) {
@@ -127,7 +121,7 @@ $( document ).ready(function() {
             scrollTop: target.offset().top
         }, 1000);
     }
-});
+  });
 });
 
   // google map //
