@@ -95,8 +95,17 @@ $( document ).ready(function() {
       }
     }
   });
+  $('.popup--video, .portfolio--list__video').magnificPopup({
+    disableOn: 0,
+    type: 'iframe',
+    mainClass: 'mfp-fade',
+    removalDelay: 160,
+    preloader: false,
+    fixedContentPos: true
+  });
+
   $('.portfolio--list').magnificPopup({
-    delegate: 'a',
+    delegate: 'a', 
     type: 'image',
     tLoading: 'Loading image #%curr%...',
     mainClass: 'mfp-img-mobile',
