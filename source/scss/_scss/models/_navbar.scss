@@ -38,6 +38,10 @@
         color: currentColor;
         user-select: none;
 
+        @include medium {
+          padding: 20px;
+        }
+
         svg {
           display: none;
         }

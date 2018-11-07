@@ -95,7 +95,7 @@ $( document ).ready(function() {
       }
     }
   });
-  $('.popup--video, .portfolio--list__video').magnificPopup({
+  $('.popup--video, .portfolio--list__video, .video--list__item .thumbnail').magnificPopup({
     disableOn: 0,
     type: 'iframe',
     mainClass: 'mfp-fade',

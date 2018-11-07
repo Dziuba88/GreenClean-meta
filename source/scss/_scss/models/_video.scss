@@ -1,0 +1,79 @@
+.video {
+  padding: 40px 0;
+
+  h1 {
+    line-height: 1;
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+
+  &--list {
+    margin-bottom: 40px;
+
+    &__item {
+      padding-bottom: 30px;
+
+      .thumbnail {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        backface-visibility: hidden;
+        margin-bottom: 10px;
+        user-select: none;
+        cursor: pointer;
+        background-color: $black;
+
+        img {
+          display: block;
+          position: relative;
+          z-index: 1;
+          width: 100%;
+          transition: .15s $standart;
+        }
+    
+        .overlay {
+          position: absolute;
+          z-index: 2;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          transform-origin: center center;
+          transition: .15s .15s $standart;
+          color: #ffffff;
+        
+          svg {
+            display: block;
+            width: 70px;
+            height: 70px;
+            fill: currentColor;
+            opacity: 0.5;
+          }
+
+        }
+
+        &:hover img {opacity: 0.4;}
+      }
+  
+      .title {
+        font-size: 18px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        color: #2f2f2f;
+      }
+
+      .description {
+        border-bottom: 1px solid #e6e6e6;
+        height: 108px;
+        overflow: hidden;
+        font-size: 15px;
+        line-height: 27px;
+      }
+  
+    }
+  }
+}
